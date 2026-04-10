@@ -1,0 +1,44 @@
+<html lang="vi">
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>Đăng ký học CABIN - V2</title>
+	  <style>
+		body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+		.btn { padding: 12px 24px; margin: 10px; font-size: 18px; cursor: pointer; }
+	  </style>
+	</head>
+	<body>
+		<h1>
+			ĐĂNG KÝ HỌC CABIN TỰ ĐỘNG
+			<br><br><br>
+			<span style="color:red;">TRUNG TÂM ĐÀO TẠO VÀ SÁT HẠCH LÁI XE MINH KHANG</span>
+		</h1>
+		<h2>
+			<span><i>Luôn đồng hành cùng quý thầy cô và học viên thân yêu !</i></span>
+		</h2>
+		<img src="minhkhang.jpg" style="
+			width: 80%;
+			min-width: 400px;
+			max-width: 500px;
+		">
+  
+		<script>
+			// Bước 1: Tạo mảng với 10 chuỗi
+			const mangChuoi = [
+				"AKfycby6v8NmF6EZ6c2FTB56b2R0wAC6G-bO48Xwpy04x1iMCl36X07D0Cqj0TGZRPKgUawg2A",
+				"AKfycbx7qsws335ZE4BxRjl3l0pS-l_9PG6xpx_BmQXR9i1nptmNh7r_kkdthslGdXVO8JGf",
+				"AKfycbyQP6So5fQtVZ_SweTABjXmj7iRylYQrdJkB6db4SP2ewyZcys8__ZlWE_SzpKQYf208g",
+				"AKfycbx_qwPSsYuq2GglPVvjnPofMKiYwXTswfE7j9F_bNnf9JHYuKAo5VF7AGsHqdbj4dbu",
+				"AKfycbz-0qKAhUDUZj-sMrDFxKfUpJLDVZCWjMXhOFdD_5N-oshxS_ygvA_4oO5QHVLF1LLD"
+			];
+
+			// Bước 2: Chọn ngẫu nhiên một phần tử từ mảng
+			const indexNgauNhien = Math.floor(Math.random() * mangChuoi.length);
+			const chuoiNgauNhien = "https://script.google.com/macros/s/"+mangChuoi[indexNgauNhien]+"/exec";
+
+			// Bước 3: In kết quả
+			setTimeout(()=> window.location.href = chuoiNgauNhien,3000);
+		</script>
+	</body>
+</html>
